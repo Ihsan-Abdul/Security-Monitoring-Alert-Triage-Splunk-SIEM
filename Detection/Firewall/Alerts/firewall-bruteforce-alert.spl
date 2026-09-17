@@ -1,0 +1,9 @@
+Firewall Bruteforce Alert SPL Query
+____________________________________
+
+index=firewall_logs Action="DENY"
+| rex field=Destination ":(?<dest_port>\d+)$"
+| where dest_port=22 OR dest_port=3389
+| bin _time span=10m
+| stats count as blocked_attempts by extracted_Source, _time
+| where blocked_attempts >= 5
