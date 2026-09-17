@@ -1,0 +1,71 @@
+timestamp,host,process,pid,message,source_ip,username,port,action
+2024-01-10 08:45:01,LINUX-WEB-01,sshd,1001,Accepted password for john from 192.168.1.20 port 53211,192.168.1.20,john,53211,Accepted
+2024-01-10 09:00:12,LINUX-DB-01,sshd,1002,Accepted password for svc_backup from 10.0.0.10 port 40122,10.0.0.10,svc_backup,40122,Accepted
+2024-01-10 10:02:00,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-10 10:02:01,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-10 10:02:02,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-10 10:02:03,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-10 10:02:04,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-10 10:02:05,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-10 10:02:06,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-10 10:02:07,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-10 10:02:15,LINUX-WEB-01,sshd,1234,Accepted password for root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Accepted
+2024-01-10 10:03:01,LINUX-DB-01,sshd,1235,Accepted password for mike from 192.168.1.21 port 53212,192.168.1.21,mike,53212,Accepted
+2024-01-10 14:20:01,LINUX-UTIL-01,sshd,1400,Accepted password for it_support from 192.168.1.50 port 60231,192.168.1.50,it_support,60231,Accepted
+2024-01-10 14:25:01,LINUX-WEB-01,sshd,1234,Accepted password for root from 203.0.113.88 port 4445,203.0.113.88,root,4445,Accepted
+2024-01-11 08:45:01,LINUX-WEB-01,sshd,1001,Accepted password for john from 192.168.1.20 port 53211,192.168.1.20,john,53211,Accepted
+2024-01-11 09:00:12,LINUX-DB-01,sshd,1002,Accepted password for svc_backup from 10.0.0.10 port 40122,10.0.0.10,svc_backup,40122,Accepted
+2024-01-11 10:02:00,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.45 port 4444,203.0.113.45,root,4444,Failed
+2024-01-11 10:02:01,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.45 port 4444,203.0.113.45,root,4444,Failed
+2024-01-11 10:02:02,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.45 port 4444,203.0.113.45,root,4444,Failed
+2024-01-11 10:02:03,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.45 port 4444,203.0.113.45,root,4444,Failed
+2024-01-11 10:02:04,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.45 port 4444,203.0.113.45,root,4444,Failed
+2024-01-11 10:02:05,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.45 port 4444,203.0.113.45,root,4444,Failed
+2024-01-11 10:02:06,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.45 port 4444,203.0.113.45,root,4444,Failed
+2024-01-11 10:02:07,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.45 port 4444,203.0.113.45,root,4444,Failed
+2024-01-11 10:02:15,LINUX-WEB-01,sshd,1234,Accepted password for root from 203.0.113.45 port 4444,203.0.113.45,root,4444,Accepted
+2024-01-11 10:03:01,LINUX-DB-01,sshd,1235,Accepted password for mike from 192.168.1.21 port 53212,192.168.1.21,mike,53212,Accepted
+2024-01-11 14:20:01,LINUX-UTIL-01,sshd,1400,Accepted password for it_support from 192.168.1.50 port 60231,192.168.1.50,it_support,60231,Accepted
+2024-01-11 14:25:01,LINUX-WEB-01,sshd,1234,Accepted password for root from 203.0.113.45 port 4445,203.0.113.45,root,4445,Accepted
+2024-01-12 08:45:01,LINUX-WEB-01,sshd,1001,Accepted password for john from 192.168.1.20 port 53211,192.168.1.20,john,53211,Accepted
+2024-01-12 09:00:12,LINUX-DB-01,sshd,1002,Accepted password for svc_backup from 10.0.0.10 port 40122,10.0.0.10,svc_backup,40122,Accepted
+2024-01-12 10:02:00,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-12 10:02:01,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-12 10:02:02,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-12 10:02:03,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-12 10:02:04,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-12 10:02:05,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-12 10:02:06,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-12 10:02:07,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Failed
+2024-01-12 10:02:15,LINUX-WEB-01,sshd,1234,Accepted password for root from 203.0.113.88 port 4444,203.0.113.88,root,4444,Accepted
+2024-01-12 10:03:01,LINUX-DB-01,sshd,1235,Accepted password for mike from 192.168.1.21 port 53212,192.168.1.21,mike,53212,Accepted
+2024-01-12 14:20:01,LINUX-UTIL-01,sshd,1400,Accepted password for it_support from 192.168.1.50 port 60231,192.168.1.50,it_support,60231,Accepted
+2024-01-12 14:25:01,LINUX-WEB-01,sshd,1234,Accepted password for root from 203.0.113.88 port 4445,203.0.113.88,root,4445,Accepted
+2024-01-13 08:45:01,LINUX-WEB-01,sshd,1001,Accepted password for john from 192.168.1.20 port 53211,192.168.1.20,john,53211,Accepted
+2024-01-13 09:00:12,LINUX-DB-01,sshd,1002,Accepted password for svc_backup from 10.0.0.10 port 40122,10.0.0.10,svc_backup,40122,Accepted
+2024-01-13 10:02:00,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-13 10:02:01,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-13 10:02:02,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-13 10:02:03,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-13 10:02:04,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-13 10:02:05,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-13 10:02:06,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-13 10:02:07,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-13 10:02:15,LINUX-WEB-01,sshd,1234,Accepted password for root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Accepted
+2024-01-13 10:03:01,LINUX-DB-01,sshd,1235,Accepted password for mike from 192.168.1.21 port 53212,192.168.1.21,mike,53212,Accepted
+2024-01-13 14:20:01,LINUX-UTIL-01,sshd,1400,Accepted password for it_support from 192.168.1.50 port 60231,192.168.1.50,it_support,60231,Accepted
+2024-01-13 14:25:01,LINUX-WEB-01,sshd,1234,Accepted password for root from 198.51.100.77 port 4445,198.51.100.77,root,4445,Accepted
+2024-01-14 08:45:01,LINUX-WEB-01,sshd,1001,Accepted password for john from 192.168.1.20 port 53211,192.168.1.20,john,53211,Accepted
+2024-01-14 09:00:12,LINUX-DB-01,sshd,1002,Accepted password for svc_backup from 10.0.0.10 port 40122,10.0.0.10,svc_backup,40122,Accepted
+2024-01-14 10:02:00,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-14 10:02:01,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-14 10:02:02,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-14 10:02:03,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-14 10:02:04,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-14 10:02:05,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-14 10:02:06,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-14 10:02:07,LINUX-WEB-01,sshd,1234,Failed password for invalid user root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Failed
+2024-01-14 10:02:15,LINUX-WEB-01,sshd,1234,Accepted password for root from 198.51.100.77 port 4444,198.51.100.77,root,4444,Accepted
+2024-01-14 10:03:01,LINUX-DB-01,sshd,1235,Accepted password for mike from 192.168.1.21 port 53212,192.168.1.21,mike,53212,Accepted
+2024-01-14 14:20:01,LINUX-UTIL-01,sshd,1400,Accepted password for it_support from 192.168.1.50 port 60231,192.168.1.50,it_support,60231,Accepted
+2024-01-14 14:25:01,LINUX-WEB-01,sshd,1234,Accepted password for root from 198.51.100.77 port 4445,198.51.100.77,root,4445,Accepted
