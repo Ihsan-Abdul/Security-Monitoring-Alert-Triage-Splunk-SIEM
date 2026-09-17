@@ -1,0 +1,7 @@
+index=firewall_logs
+| bin _time span=10m
+| stats count(eval(Action="DENY")) as failed_attempts, count(eval(Action="ALLOW")) as successful_attempts 
+  by extracted_Source, Destination, _time
+| where failed_attempts >= 3 AND successful_attempts > 0
+| table _time, extracted_Source, Destination, failed_attempts, successful_attempts
+| sort _time, failed_attempts
