@@ -14,7 +14,7 @@ This project documents a full detection workflow built in Splunk against a simul
 
 ## Quick Start
 
-- **Detection logic:** the query catalog and the reasoning behind each detection are in [Detections](Detections).
+- **Detection logic:** the query catalog and the reasoning behind each detection are in [Detections](Detection).
 - **Investigation detail:** the full attack narrative, broken into firewall, Windows, and Linux findings, is in [Investigations](Investigations).
 - **Triage procedures:** step-by-step response guidance for each alert is in [Playbooks/Alert-Triage-Playbook.md](Playbooks/Alert-Triage-Playbook.md).
 - **Sample data:** the simulated logs used throughout this project are in [Sample-Logs](Sample-Logs).
@@ -64,7 +64,7 @@ The simulated logs used throughout this project are in [Sample-Logs](Sample-Logs
 
 1. Install Splunk Enterprise (free license) or start a Splunk Cloud trial.
 2. Load the three CSV files from [Sample-Logs](Sample-Logs) into Splunk as file inputs, assigning them to the `firewall_logs`, `windows_logs`, and `linux_logs` indexes referenced in the queries.
-3. Run the queries from [Detections](Detections) as searches to confirm they return results against the sample data, then save each one as a scheduled alert using the settings shown in the accompanying screenshots.
+3. Run the queries from [Detections](Detection) as searches to confirm they return results against the sample data, then save each one as a scheduled alert using the settings shown in the accompanying screenshots.
 4. Run the investigation queries from [Investigations](Investigations) to reconstruct the attack timeline, following the three write-ups in order: firewall, then Linux, then Windows.
 5. Use [Playbooks/Alert-Triage-Playbook.md](Playbooks/Alert-Triage-Playbook.md) to walk through the response steps for each alert as if it had just fired.
 
