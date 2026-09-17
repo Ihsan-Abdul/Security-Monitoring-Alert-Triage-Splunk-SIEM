@@ -8,4 +8,4 @@ This folder documents the process of tracing a single attack campaign across thr
 
 Each write-up includes the SPL query used to uncover the finding and a screenshot of that query run against the sample data, so the investigation can be followed and reproduced rather than taken on faith.
 
-For the detections that were built to catch this campaign automatically rather than found through manual investigation, see [Detections](../Detections). For the response actions taken once the campaign was confirmed, see the [Alert Triage Playbook](../Playbooks/Alert-Triage-Playbook.md) and the companion [Incident Response Report](https://github.com/Ihsan-Abdul/Incident-Response-Triage-Documentation).
+For the detections that were built to catch this campaign automatically rather than found through manual investigation, see [Detections](../Detection). For the response actions taken once the campaign was confirmed, see the [Alert Triage Playbook](../Playbooks/Alert-Triage-Playbook.md) and the companion [Incident Response Report](https://github.com/Ihsan-Abdul/Incident-Response-Triage-Documentation).
