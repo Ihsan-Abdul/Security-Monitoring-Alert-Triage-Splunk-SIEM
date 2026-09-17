@@ -1,0 +1,9 @@
+index=windows_logs (EventID = 4624 OR EventID = 4625)
+|bin _time span=10m 
+|stats 
+ count(eval(EventID == 4625)) as failed_attempts count(eval(EventID == 4624)) as successful_login by _time, AccountName, SourceIP
+| where failed_attempts >= 5 
+|eval severity = if(successful_login > 0, "High", "Medium")
+|eval alert = if(successful_login > 0, "BruteForce Success", "BruteForce Detected")
+|sort - severity, failed_attempts, _time
+|table _time, SourceIP, AccountName, failed_attempts, successful_login, severity, alert

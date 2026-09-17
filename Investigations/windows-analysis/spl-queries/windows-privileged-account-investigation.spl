@@ -1,0 +1,7 @@
+index=windows_logs EventID = 4672
+|eval ip_type=if(match(SourceIP, "^192\.168|10\.|172\.(1[6-9]|2[0-9]|3[0-1])"), "Internal", "External")
+|where ip_type="External" AND AccountName = "admin"
+|eval severity = "High"
+|eval alert = "Admin account from External IP address"
+|sort TimeCreated
+|table TimeCreated, AccountName, Computer, SourceIP, ip_type, severity, alert

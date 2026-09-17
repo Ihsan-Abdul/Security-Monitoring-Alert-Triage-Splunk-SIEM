@@ -1,0 +1,5 @@
+index=windows_logs EventID=4688
+|search CommandLine="*encodedCommand*" OR CommandLine="*psexec*"
+|eval severity=if(match(CommandLine, "encodedCommand"), "HIGH", "MEDIUM")
+|table TimeCreated, AccountName, Process_Name, CommandLine, severity
+|sort TimeCreated
