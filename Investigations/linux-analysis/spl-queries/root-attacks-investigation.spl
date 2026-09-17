@@ -1,0 +1,8 @@
+index=linux_logs username="root"
+| bin _time span=10m
+| stats count(eval(action="Failed")) as failed_attempts count(eval(action="Accepted")) as successful_logins by source_ip, _time
+| where failed_attempts >= 3
+| eval severity = if(successful_logins > 0, "CRITICAL", "HIGH")
+| eval alert = if(successful_logins > 0, "ROOT COMPROMISE", "ROOT BRUTE FORCE")
+| table _time, source_ip, failed_attempts, successful_logins, alert, severity
+| sort - severity, -failed_attempts, _time

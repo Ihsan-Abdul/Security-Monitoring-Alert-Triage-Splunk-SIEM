@@ -1,0 +1,4 @@
+index=linux_logs port!=22
+| stats count as attempts by port, action, username
+| table port, action, username, attempts
+| sort - attempts

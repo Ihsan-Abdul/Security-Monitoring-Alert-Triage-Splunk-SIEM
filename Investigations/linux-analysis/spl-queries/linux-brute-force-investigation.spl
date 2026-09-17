@@ -1,0 +1,7 @@
+index=linux_logs action="Failed"
+| bin _time span=10m
+| stats count as failed_attempts by source_ip, username, _time
+| where failed_attempts >= 5
+| eval severity = if(failed_attempts >= 10, "HIGH", "MEDIUM")
+| table _time, source_ip, username, failed_attempts, severity
+| sort - failed_attempts, _time
