@@ -1,0 +1,4 @@
+index=windows_logs EventID=4624
+| search AccountName="*admin*"
+| where NOT SourceIP="192.168.*"
+| stats count by AccountName, SourceIP, _time
