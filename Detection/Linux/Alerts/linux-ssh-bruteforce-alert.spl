@@ -1,0 +1,5 @@
+
+index=linux_logs action="Failed" process="sshd"
+| bin _time span=10m
+| stats count as failed_ssh_logins by source_ip, _time
+| where failed_ssh_logins >= 5
