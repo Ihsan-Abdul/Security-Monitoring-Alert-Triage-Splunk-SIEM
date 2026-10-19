@@ -6,12 +6,12 @@ This directory contains the Splunk detections built to identify the attack campa
 
 | Detection Name | MITRE ATT&CK Technique | Log Source | SPL File | Severity | Triage Notes |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Firewall Brute Force Success** | T1110.004, TA0001 | Firewall | [firewall-bruteforce-alert.spl](Firewall/Alert/firewall-bruteforce-alert.spl) | High | Correlate the source IP against Windows and Linux authentication logs for the same time window. |
-| **Windows RDP Brute Force** | T1110.001 | Windows | [windows-bruteforce-alert.spl](Windows/Alert/windows-bruteforce-alert.spl) | Medium | Confirm whether the account has a lockout policy enabled, and check for a successful login following the failures. |
-| **Windows Admin Login from External IP** | T1078.002 | Windows | [windows-admin-external-alert.spl](Windows/Alert/windows-admin-external-alert.spl) | Critical | Treat as an active incident. Verify whether the login was authorized before assuming credential theft. |
-| **Linux SSH Brute Force** | T1110.003 | Linux | [linux-ssh-bruteforce-alert.spl](Linux/Alert/linux-ssh-bruteforce-alert.spl) | Medium | Identify the targeted account and check whether any of the failed attempts were followed by a success. |
+| **Firewall Brute Force Success** | T1110.004, TA0001 | Firewall | [firewall-bruteforce-alert.spl](Firewall/Alerts/firewall-bruteforce-alert.spl) | High | Correlate the source IP against Windows and Linux authentication logs for the same time window. |
+| **Windows RDP Brute Force** | T1110.001 | Windows | [windows-bruteforce-alert.spl](Windows/Alerts/windows-bruteforce-alert.spl) | Medium | Confirm whether the account has a lockout policy enabled, and check for a successful login following the failures. |
+| **Windows Admin Login from External IP** | T1078.002 | Windows | [windows-admin-external-alert.spl](Windows/Alerts/windows-admin-external-alert.spl) | Critical | Treat as an active incident. Verify whether the login was authorized before assuming credential theft. |
+| **Linux SSH Brute Force** | T1110.003 | Linux | [linux-ssh-bruteforce-alert.spl](Linux/Alerts/linux-ssh-bruteforce-alert.spl) | Medium | Identify the targeted account and check whether any of the failed attempts were followed by a success. |
 
-Two additional detections, privileged account monitoring on Windows and a targeted check for root account compromise on Linux, were built during the investigation phase rather than as standing alerts. Those queries live in the `Investigations` folder and are documented there, since they were written to answer a specific question about the attack rather than to run on a schedule.
+The four detections above run as scheduled alerts. Two additional detections, privileged account monitoring on Windows and a targeted check for root account compromise on Linux, were built during the investigation phase rather than as standing alerts. Those queries live in the `Investigations` folder and are documented there, since they were written to answer a specific question about the attack rather than to run on a schedule.
 
 ## How Each Detection Was Built
 
