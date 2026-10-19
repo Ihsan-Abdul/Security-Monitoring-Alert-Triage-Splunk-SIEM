@@ -14,7 +14,7 @@ This project documents a full detection workflow built in Splunk against a simul
 
 ## Quick Start
 
-- **Detection logic:** the query catalog and the reasoning behind each detection are in [Detections](Detection).
+- **Detection logic:** the query catalog and the reasoning behind each detection are in [Detection](Detection).
 - **Investigation detail:** the full attack narrative, broken into firewall, Windows, and Linux findings, is in [Investigations](Investigations).
 - **Triage procedures:** step-by-step response guidance for each alert is in [Playbooks/Alert-Triage-Playbook.md](Playbooks/Alert-Triage-Playbook.md).
 - **Sample data:** the simulated logs used throughout this project are in [Sample-Logs](Sample-Logs).
@@ -24,7 +24,7 @@ This project documents a full detection workflow built in Splunk against a simul
 ```
 Security-Monitoring-Alert-Triage-Splunk-SIEM/
 ├── README.md
-├── Detections/      Detection queries, alert configuration, and screenshots for each of the four scheduled alerts
+├── Detection/       Detection queries, alert configuration, and screenshots for each of the four scheduled alerts
 ├── Investigations/  The attack narrative across firewall, Windows, and Linux logs, with supporting queries and screenshots
 ├── Playbooks/       Triage steps for each detection, written against the specific findings from this campaign
 └── Sample-Logs/     The simulated log data used to build and test every query in this project
@@ -51,7 +51,7 @@ The simulated logs used throughout this project are in [Sample-Logs](Sample-Logs
 1. **Correlation searches** to detect patterns like repeated failed logins followed by a success, the signature of a brute force attempt that worked.
 2. **Scheduled alerts** with threshold-based triggering, each configured with a cron schedule and a logged action, documented with screenshots of the actual Splunk configuration.
 3. **Investigation queries** written to answer specific questions that came up while tracing the attack, such as whether a privileged account was used from outside the network, or whether the attacker was using non-standard ports.
-4. **A triage playbook** covering all six detections, written against the actual accounts, IPs, and timing observed in this campaign rather than as a generic checklist.
+4. **A triage playbook** covering all six detections (four scheduled alerts plus two built during the investigation), written against the actual accounts, IPs, and timing observed in this campaign rather than as a generic checklist.
 
 ## Key Learnings and Insights
 
@@ -64,7 +64,7 @@ The simulated logs used throughout this project are in [Sample-Logs](Sample-Logs
 
 1. Install Splunk Enterprise (free license) or start a Splunk Cloud trial.
 2. Load the three CSV files from [Sample-Logs](Sample-Logs) into Splunk as file inputs, assigning them to the `firewall_logs`, `windows_logs`, and `linux_logs` indexes referenced in the queries.
-3. Run the queries from [Detections](Detection) as searches to confirm they return results against the sample data, then save each one as a scheduled alert using the settings shown in the accompanying screenshots.
+3. Run the queries from [Detection](Detection) as searches to confirm they return results against the sample data, then save each one as a scheduled alert using the settings shown in the accompanying screenshots.
 4. Run the investigation queries from [Investigations](Investigations) to reconstruct the attack timeline, following the three write-ups in order: firewall, then Linux, then Windows.
 5. Use [Playbooks/Alert-Triage-Playbook.md](Playbooks/Alert-Triage-Playbook.md) to walk through the response steps for each alert as if it had just fired.
 
